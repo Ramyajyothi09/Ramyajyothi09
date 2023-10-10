@@ -1,0 +1,10 @@
+'''sno=1
+sname=sai
+group=mpcs'''
+s1=80
+s2=70
+s3=60
+total=s1+s2+s3
+print('total:',total)
+avg=total//3
+print('avg:',avg)
