@@ -1,0 +1,7 @@
+p=int(input('Enter principle amount:'))
+t=int(input('Enter the time period:'))
+r=int(input('Enter the rate of interest:'))
+si=p*r*t/100
+print('The si is:',si)
+emi=(si+p)/(t*12)
+print('The emi is:',emi)
