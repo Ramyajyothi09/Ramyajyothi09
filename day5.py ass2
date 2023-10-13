@@ -1,0 +1,39 @@
+saree=1000
+kurti=500
+salwar=600
+jeans=450
+print('* * * Welcome to Goenkas shopping mall* * * ')
+cname=input('Enter customer name:')
+cphone=int(input('Enter customer phone no.:'))
+csaree=int(input('Enter no. of sarees:'))
+ckurti=int(input('Enter no. of kurtis:'))
+csalwar=int(input('Enter no. of salwars:'))
+cjeans=int(input('Enter no. of jeans:'))
+bill=(saree*csaree)+(kurti*ckurti)+(salwar*csalwar)+(jeans+cjeans)
+pc=input('Enter promo code:')
+if pc=='christmas' or pc=='CHRISTMAS':
+	disc=bill*50/100
+elif bill>=1500:
+	disc=bill*40/100
+elif bill>=1000:
+	disc=bill*30/100
+elif bill>=500:
+	disc=bill*10/100
+elif bill>=400:
+	disc=bill*3/100
+else:
+	disc=bill
+totalbill=bill-disc
+gst=totalbill*13/100
+obill=totalbill+gst
+print('customer name:',cname)
+print('customer phno.:',cphone)
+print('Bill:',bill)
+print('Discount:',disc)
+print('GST 13%:',gst)
+print('Total bill to be paid:',obill)
+print('* * * Thank you * * *')
+	
+
+
+
