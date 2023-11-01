@@ -3,4 +3,5 @@ l=[ ]
 for i in range(n):
 	x=int(input())
 	l.append(x)
-print(l)
+print(l[0])
+print(l[n-1])
