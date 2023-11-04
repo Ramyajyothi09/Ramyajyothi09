@@ -1,0 +1,18 @@
+class Solution:
+def missingNumber(self,array,n):
+# code here
+osum=0
+for i in range(1,n+1):
+osum=osum+i
+asum=sum(array)
+return osum-asum
+
+
+#{ 
+# Driver Code Starts
+#Initial Template for Python 3
+t=int(input())
+for _ in range(0,t):
+n=int(input())
+a=list(map(int,input().split()))
+s=Solution().missingNumber(a,n)
