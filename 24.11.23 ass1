@@ -1,0 +1,21 @@
+   def mysub():
+    a=int(num1.get())
+    b=int(num2.get())
+    res=a-b
+    l3.config(text=res)
+from tkinter import*
+sub=Tk()
+sub.title("subtracting 2 no's")
+l1=Label(sub,text="Enter 1st no. : ")
+num1=Entry(sub)
+l2=Label(sub,text="Enter 2nd no. : ")
+num2=Entry(sub)
+b=Button(sub,text="sub",command=mysub)
+l3=Label(sub,text="result: ")
+l1.grid(row=0,column=0)
+num1.grid(row=0,column=1)
+l2.grid(row=1,column=0)
+num2.grid(row=1,column=1)
+b.grid(row=2,column=0)
+l3.grid(row=2,column=1)
+sub.mainloop()
