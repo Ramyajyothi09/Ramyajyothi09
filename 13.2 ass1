@@ -1,0 +1,41 @@
+
+class emp:
+	def getdata(self,empno,empname,designation,basic,hra,da,ta):
+		self.empno=empno
+		self.empname=empname
+		self.designation=designation
+		self.basic=basic
+		self.hra=hra
+		self.da=da
+		self.ta=ta
+	def putdata(self):
+		print('Emp no:',self.empno)
+		print('Emp name:',self.empname)
+		print('Emp designation:',self.designation)
+		print('Emp basic:',self.basic)
+		print('Emp hra:',self.hra)
+		print('Emp da:',self.da)
+		print('Emp ta:',self.ta)
+		netsalary=basic+da+ta+hra
+		if netsalary>50000:
+			n=netsalary-5/100
+			print(n)
+		elif netsalary>35000:
+			n=netsalary-3/100
+			print(n)
+		elif netsalary>20000:
+			n=netsalary-1/100
+			print(n)
+		else:
+			n=netsalary
+			print(n)
+s=emp()
+empno=int(input('Enter emp no:'))
+empname=input('Enter emp name:')
+designation=int(input('Enter designation:'))
+basic=int(input('Enter basic:'))
+hra=int(input('Enter hr:'))
+da=int(input('Enter da:'))
+ta=int(input('Enter ta:'))
+s.getdata(empno,empname,designation,basic,hra,da,ta)
+s.putdata()
